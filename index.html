@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+<body>
+    <div class="wrapper"> <!-- New Wrapper div -->
+        <h1 class="text-center">Generate your Resume/CV</h1>
+        <div class="container">
+            <h2 class="mb-4">Resume Builder</h2>
+            <!--<form action="/" method="post">-->
+            <form action="/build" method="post">
+
+        <!-- ... other form fields ... -->
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea class="form-control" id="address" name="address" placeholder="Your Address" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="education">Education:</label>
+            <textarea class="form-control" id="education" name="education" placeholder="Your Educational Background" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="experience">Experience:</label>
+            <textarea class="form-control" id="experience" name="experience" placeholder="Your Professional Experience" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="certifications">Certifications:</label>
+            <textarea class="form-control" id="certifications" name="certifications" placeholder="Any Certifications"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="skills">Skills:</label>
+            <textarea class="form-control" id="skills" name="skills" placeholder="List your skills separated by commas"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="projects">Projects:</label>
+            <textarea class="form-control" id="projects" name="projects" placeholder="Describe your key projects"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="languages">Languages:</label>
+            <textarea class="form-control" id="languages" name="languages" placeholder="Languages you are proficient in"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Generate Resume</button>
+    </form>
+</div>
+</body>
+</html>
+
+

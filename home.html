@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles1.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+<body>
+    <header class="showcase">
+        <div class="showcase-top">
+            <img src="path_to_your_logo.png" alt="Resume Builder Logo" />
+            <a href="/login" class="btn btn-rounded">Sign In</a>
+        </div>
+        <div class="showcase-content">
+            <h1>Build Your Professional Resume</h1>
+            <p>Create, customize, and download in minutes</p>
+            <a href="/build" class="btn btn-xl">Start Building Now <i class="fas fa-chevron-right btn-icon"></i></a>
+        </div>
+    </header>
+
+    <section class="tabs">
+        <div class="container">
+            <div id="tab-1" class="tab-item tab-border">
+                <i class="fas fa-pencil-alt fa-3x"></i>
+                <p class="hide-sm">Easy to Use</p>
+            </div>
+            <div id="tab-2" class="tab-item">
+                <i class="fas fa-mobile-alt fa-3x"></i>
+                <p class="hide-sm">Responsive Designs</p>
+            </div>
+            <div id="tab-3" class="tab-item">
+                <i class="fas fa-download fa-3x"></i>
+                <p class="hide-sm">Instant Downloads</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="tab-content">
+        <div class="container">
+            <!-- Tab Content 1 -->
+            <div id="tab-1-content" class="tab-content-item show">
+                <div class="tab-1-content-inner">
+                    <div>
+                        <p class="text-lg">
+                            No more formatting hassles. Create your resume in minutes.
+                        </p>
+                        <a href="/build" class="btn btn-lg">Start Building Now</a>
+                    </div>
+                    <img src="path_to_relevant_image.png" alt="Resume Preview" />
+                </div>
+            </div>
+
+            <!-- Tab Content 2 -->
+            <div id="tab-2-content" class="tab-content-item">
+                <div class="tab-2-content-top">
+                    <p class="text-lg">
+                        Mobile, tablet, or desktop. Your resume will look great everywhere.
+                    </p>
+                    <a href="/build" class="btn btn-lg">Choose a Template</a>
+                </div>
+                <div class="tab-2-content-bottom">
+                    <div>
+                        <img src="path_to_relevant_image_mobile.png" alt="" />
+                        <p class="text-md">Mobile Ready</p>
+                    </div>
+                    <div>
+                        <img src="path_to_relevant_image_tablet.png" alt="" />
+                        <p class="text-md">Perfect for Tablets</p>
+                    </div>
+                    <div>
+                        <img src="path_to_relevant_image_desktop.png" alt="" />
+                        <p class="text-md">Desktop Ready</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Content 3 -->
+            <div id="tab-3-content" class="tab-content-item">
+                <div class="text-center">
+                    <p class="text-lg">
+                        Once you're satisfied, download your resume instantly.
+                    </p>
+                    <a href="/build" class="btn btn-lg">Start Building Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Questions? Contact our support</p>
+        <div class="footer-cols">
+            <ul>
+                <li><a href="/faq">FAQ</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/templates">Templates</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="/privacy">Privacy Policy</a></li>
+                <li><a href="/terms">Terms of Use</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
